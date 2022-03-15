@@ -9,55 +9,63 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="assets/img/logo.png" alt="Stop&Go"></a>
-        <menu>
-            <ul>
-                <li><a href="o-nama.html" >O Nama</a></li>
-                <li><a href="automehanika.html" >Mehanika</a></li>
-                <li><a href="vulkanizer.html" >Vulkanizer</a></li>
-                <li><a href="autodijagnostika.html" >Dijagnostika</a></li>
-                <li><a href="kontakt.html" >Kontakt</a></li>
-            </ul>
-        </menu>
+        <a href="index.html"><img class="logo" src="assets/img/logo.png" alt="Stop&Go"></a>
+        <nav> 
+          <!-- MOBILE MENU -->
+          <label for="check" id="mobile-menu">&#9776</label>
+          <input type="checkbox" id="check">
+         <!-- MOBILE MENU END -->
+            <menu>
+                <a href="o-nama.html" >O Nama</a>
+                <a href="automehanika.html" >Mehanika</a>
+                <a href="vulkanizer.html" >Vulkanizer</a>
+                <a href="autodijagnostika.html" >Dijagnostika</a>
+                <a href="kontakt.html" >Kontakt</a>
+            </menu>
+        </nav>
     </header>
-    <main>
-        <h1>Kontakt</h1>
-        <div>
-            <a href="https://www.google.com/maps/place/Stop+%26+Go/@44.8184053,20.3939767,16.5z/data=!4m5!3m4!1s0x0:0x580f3f543618509a!8m2!3d44.8184052!4d20.3950389?hl=en-US" target="_blank"><img src="assets/img/map.jpg" alt="mapa"></a>
-        </div>
-        <p>Tošin bunar 234b, Beograd 11070</p>
-        <div>
-            <h2>Kontaktirajte nas</h2>
-            <p>Popunite kontakt formu i odgovorićemo Vam u najbržem mogućem roku.</p>
+    <!-- HEADER END -->
+    <main class="wrapper">
+        <div class="main-content">
+            <h1>Kontakt</h1>
             <div>
-                <form action="">
-                    <input type="text">
-                    <input type="tel" name="" id="">
-                    <input type="email" name="" id="">
-                    <input type="text" name="" id="">
-                    <input type="text" name="" id="">
-                    <button type="submit">Pošalji poruku</button>
-                </form>
+                <a href="https://www.google.com/maps/place/Stop+%26+Go/@44.8184053,20.3939767,16.5z/data=!4m5!3m4!1s0x0:0x580f3f543618509a!8m2!3d44.8184052!4d20.3950389?hl=en-US" target="_blank"><img src="assets/img/map.jpg" alt="mapa"></a>
             </div>
-    </main>
-    <aside>
-        <h3>Usluge</h3>
-        <ul>
-            <li><a href="automehanika.html">Automehanika</a></li>
-            <li><a href="vulkanizer.html">Vulkanizer</a></li>
-            <li><a href="autodijagnostika.html">Autodijagnostika</a></li>
-        </ul>
-    </aside>
-    <footer>
-        <menu>
+            <p>Tošin bunar 234b, Beograd 11070</p>
+            <div>
+                <h2>Kontaktirajte nas</h2>
+                <p>Popunite kontakt formu i odgovorićemo Vam u najbržem mogućem roku.</p>
+                <div>
+                    <form action="">
+                        <input type="text">
+                        <input type="tel" name="" id="">
+                        <input type="email" name="" id="">
+                        <input type="text" name="" id="">
+                        <input type="text" name="" id="">
+                        <button type="submit">Pošalji poruku</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <aside class="main-sidebar">
+            <h3>Usluge</h3>
             <ul>
-                <li><a href="index.html" >Naslovna</a></li>
-                <li><a href="o-nama.html" >O Nama</a></li>
-                <li><a href="kontakt.html" >Kontakt</a></li>
+                <li><a href="automehanika.html">Automehanika</a></li>
+                <li><a href="vulkanizer.html">Vulkanizer</a></li>
+                <li><a href="autodijagnostika.html">Autodijagnostika</a></li>
             </ul>
-        </menu>
+        </aside>
+    </main>
+    <!-- FOOTER -->  
+    <footer>
+        <nav class="footer-menu">
+            <a href="index.html" >Naslovna</a>
+            <a href="o-nama.html" >O Nama</a>
+            <a href="kontakt.html" >Kontakt</a>
+        </nav>
         <p>Copyright © 2022 Stop & Go Servis. All rights reserved.</p>
     </footer>
+    <!-- FOOTER END -->  
     <script src="js/main.js"></script>
 </body>
 </html>

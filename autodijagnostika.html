@@ -9,51 +9,60 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="assets/img/logo.png" alt="Stop&Go"></a>
-        <menu>
-            <ul>
-                <li><a href="o-nama.html" >O Nama</a></li>
-                <li><a href="automehanika.html" >Mehanika</a></li>
-                <li><a href="vulkanizer.html" >Vulkanizer</a></li>
-                <li><a href="autodijagnostika.html" >Dijagnostika</a></li>
-                <li><a href="kontakt.html" >Kontakt</a></li>
-            </ul>
-        </menu>
+        <a href="index.html"><img class="logo" src="assets/img/logo.png" alt="Stop&Go"></a>
+        <nav> 
+          <!-- MOBILE MENU -->
+          <label for="check" id="mobile-menu">&#9776</label>
+          <input type="checkbox" id="check">
+         <!-- MOBILE MENU END -->
+            <menu>
+                <a href="o-nama.html" >O Nama</a>
+                <a href="automehanika.html" >Mehanika</a>
+                <a href="vulkanizer.html" >Vulkanizer</a>
+                <a href="autodijagnostika.html" >Dijagnostika</a>
+                <a href="kontakt.html" >Kontakt</a>
+            </menu>
+        </nav>
     </header>
-    <main>
-        <h1>Autodijagnostika</h1>
-        <p>Autodijagnostika je kompjutersko uočavanje kvara na automobilu. Ovo je najprecizniji način određivanja stanja automobila zahvaljujući tome što gotovo svako vozilo danas poseduje određeni vid elektronskog sistema koji za očitavanje kvarova zahteva kompjuterske provere. Koja god vrsta kvara da se pojavi, elektronski sistem će informaciju o kvaru zapamtiti kao grešku koja će moći da bude identifikovana čim se uređaj za autodijagnostiku poveže sa vozilom.</p>
-        <h2>KAKO RADI AUTODIJAGNOSTIKA?</h2>
-        <img src="" alt="">
-        <p>Računar u vozilu prati rad svih komponenti na vozilu i prepoznaje kvarove o kojima objavljuje obaveštenje signalima na instrument tabli. Uređaj za auto dijagnostiku, kada se poveže sa vozilom, iz memorije centralnog kompjutera u automobilu čita osnovna podešavanja i greške na svim povezanim sistemima. Autodijagnostikom mogu se proveriti i pronaći kvarovi na sistemima za paljenje i ubrzigavanje na benzinskim ili dizel motorima, na automatskim menjačima, na klima uređajima, kvarovi na instrumentalnim tablama, u ABS sistemu, na vazdušnim jastucima, i na svim ostalnim elektronskim komponentama i uređajima.</p>
-        <p>Preko programa na uređaju za autodijagnostiku može se, takođe, izvršiti adaptacija novih delova i opreme na automobilu, kao što su ključevi, imobilajzer i instrument tabla, kao i resetovanje intervala između dva servisa, itd.</p>
-        <p>Za pravilno izvođenje autodijagnostike, nije dovoljna ispravna i kvalitetna oprema, već su potrebne veština i koncentracija servisera – autodijagnostičara. Ukoliko su navedeni uslovi ispunjeni, kvar će biti pronađen i otklonjen.</p>
-        <h2>KOMPJUTERSKA DIJAGNOSTIKA</h2>
-        <p>Najnoviji autodijagnostički uređaji stupaju u kontakt sa bilo kojim vozilom uspostavljajući kablovsku, WI- FI ili Bluetooth vezu sa centralnim kompjuterom na automobilu. Kada se uređaji povežu, serviser očitava podatke i upoređuje vrednosti. Iz ovog postupka izvode se zaključci o greškama i kvarovima.</p>
-        <div>
-            <p>Pojedini uređaji i programi mogu vršiti autodijagnostiku za vozila određenih marki automobila, dok su drugi osmišljeni i napravljeni tako da pronađu greške i kvarove na svim modelima putničkih vozila. U pitanju su, naravno, automobili koji poseduju centralni kompjuter.</p>
-            <img src="" alt="">
+    <!-- HEADER END -->
+    <main class="wrapper">
+        <div class="main-content">
+            <h1>Autodijagnostika</h1>
+            <p>Autodijagnostika je kompjutersko uočavanje kvara na automobilu. Ovo je najprecizniji način određivanja stanja automobila zahvaljujući tome što gotovo svako vozilo danas poseduje određeni vid elektronskog sistema koji za očitavanje kvarova zahteva kompjuterske provere. Koja god vrsta kvara da se pojavi, elektronski sistem će informaciju o kvaru zapamtiti kao grešku koja će moći da bude identifikovana čim se uređaj za autodijagnostiku poveže sa vozilom.</p>
+            <h2>KAKO RADI AUTODIJAGNOSTIKA?</h2>
+            <img src="assets/img/autodijagnostika-3.jpg" alt="autodijagnostika">
+            <p>Računar u vozilu prati rad svih komponenti na vozilu i prepoznaje kvarove o kojima objavljuje obaveštenje signalima na instrument tabli. Uređaj za auto dijagnostiku, kada se poveže sa vozilom, iz memorije centralnog kompjutera u automobilu čita osnovna podešavanja i greške na svim povezanim sistemima. Autodijagnostikom mogu se proveriti i pronaći kvarovi na sistemima za paljenje i ubrzigavanje na benzinskim ili dizel motorima, na automatskim menjačima, na klima uređajima, kvarovi na instrumentalnim tablama, u ABS sistemu, na vazdušnim jastucima, i na svim ostalnim elektronskim komponentama i uređajima.</p>
+            <p>Preko programa na uređaju za autodijagnostiku može se, takođe, izvršiti adaptacija novih delova i opreme na automobilu, kao što su ključevi, imobilajzer i instrument tabla, kao i resetovanje intervala između dva servisa, itd.</p>
+            <p>Za pravilno izvođenje autodijagnostike, nije dovoljna ispravna i kvalitetna oprema, već su potrebne veština i koncentracija servisera – autodijagnostičara. Ukoliko su navedeni uslovi ispunjeni, kvar će biti pronađen i otklonjen.</p>
+            <h2>KOMPJUTERSKA DIJAGNOSTIKA</h2>
+            <p>Najnoviji autodijagnostički uređaji stupaju u kontakt sa bilo kojim vozilom uspostavljajući kablovsku, WI- FI ili Bluetooth vezu sa centralnim kompjuterom na automobilu. Kada se uređaji povežu, serviser očitava podatke i upoređuje vrednosti. Iz ovog postupka izvode se zaključci o greškama i kvarovima.</p>
+            <div>
+                <p>Pojedini uređaji i programi mogu vršiti autodijagnostiku za vozila određenih marki automobila, dok su drugi osmišljeni i napravljeni tako da pronađu greške i kvarove na svim modelima putničkih vozila. U pitanju su, naravno, automobili koji poseduju centralni kompjuter.</p>
+                <img src="assets/img/autodijagnostika-1.jpg" alt="autodijagnostika">
+            </div>
+            <p>Popravljanje automobila novije generacije gotovo da je nije moguće bez prethodno odrađene odgovarajuće dijagnostike.</p>         
         </div>
-        <p>Popravljanje automobila novije generacije gotovo da je nije moguće bez prethodno odrađene odgovarajuće dijagnostike.</p>
-    </main>
-    <aside>
-        <h3>Usluge</h3>
-        <ul>
-            <li><a href="automehanika.html">Automehanika</a></li>
-            <li><a href="vulkanizer.html">Vulkanizer</a></li>
-            <li><a href="autodijagnostika.html">Autodijagnostika</a></li>
-        </ul>
-    </aside>
-    <footer>
-        <menu>
+        <!-- SIDEBAR -->  
+        <aside class="main-sidebar">
+            <h3>Usluge</h3>
             <ul>
-                <li><a href="index.html" >Naslovna</a></li>
-                <li><a href="o-nama.html" >O Nama</a></li>
-                <li><a href="kontakt.html" >Kontakt</a></li>
+                <li><a href="automehanika.html">Automehanika</a></li>
+                <li><a href="vulkanizer.html">Vulkanizer</a></li>
+                <li><a href="autodijagnostika.html">Autodijagnostika</a></li>
             </ul>
-        </menu>
+        </aside>
+        <!-- SIDEBAR END -->  
+    </main>
+    <!-- FOOTER -->  
+    <footer>
+        <nav class="footer-menu">
+            <a href="index.html" >Naslovna</a>
+            <a href="o-nama.html" >O Nama</a>
+            <a href="kontakt.html" >Kontakt</a>
+        </nav>
         <p>Copyright © 2022 Stop & Go Servis. All rights reserved.</p>
     </footer>
+    <!-- FOOTER END -->  
     <script src="js/main.js"></script>
 </body>
 </html>
