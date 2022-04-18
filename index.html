@@ -8,89 +8,34 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img class="logo" src="assets/img/logo.png" alt="Stop&Go"></a>
-        <nav> 
-          <!-- MOBILE MENU -->
-          <label for="check" id="mobile-menu">&#9776</label>
-          <input type="checkbox" id="check">
-         <!-- MOBILE MENU END -->
-            <menu>
-                <a href="#automehanika" >Mehanika</a>
-                <a href="#vulkanizer" >Vulkanizer</a>
-                <a href="#autodijagnostika" >Dijagnostika</a>
-                <a href="#kontakt" >Kontakt</a>
-            </menu>
-        </nav>
-    </header>
+    <div id="header">
+        <!-- HEADER LOGO -->
+        <!-- MOBILE MENU -->   
+    </div>
     <!-- HEADER END -->
-    <main>
+    <div id="slider"> 
+        <img src="assets/img/home-hero.jpg" />
+        <a id="left"><img src="assets/img/left-arrow.png" alt="left"></a>
+        <a id="right"><img src="assets/img/right-arrow.png" alt="right"></a>
+    </div>
+    <div id="main">
         <div class="wrapper">
-        <!-- INTRO --> 
-            <div class="intro">
-                <p>Auto servis Stop & Go je firma sa tradicijom dugom više od 20 godina. Osnovana davne 1990.godine kao SZAR Bora Auto, naša firma se bavila kako automehaničarskim uslugama tako i centriranjem i reglažom trapa. Stop & Go već dugi niz godina uspešno sarađuje sa brojnim zadovoljnim klijentima. Kako tehnologija napreduje i širi se spektar inovacija, potrudili smo se da naš tim ide u korak sa vremenom.</p>
-            </div>
-        <!-- INTRO END -->  
-            <div class="boxes">
-                <div id="automehanika" class="box">
-                    <h2>AUTOMEHANIKA</h2>
-                        <div class="box-1">
-                            <img src="assets/img/automehanika-popravka-motora.jpg" alt="automehanika">
-
-                            <p>Automehaničarska radionica u okviru servisa Stop & Go opremljena je najsavremenijim dijagnostičkim aparatima. Pored toga, imamo dve stubne dizalice, kanal i kompletan alat potreban za popravku vašeg vozila. Raspolažemo i kompletnim alatom i opremom za servis svih marki vozila. Preko trideset godina iskustva i tradicijom od dvadeset godina garantuje svim dosadašnjim i novim klijentima našeg servisa kvalitet, a poučeni iskustvom onih koji su na naše zadovoljstvo, već izvršili servisiranje vozila.
-                                Naše stručno osoblje višegodišnjim iskustvom vam brzo i lako može otkloniti sve vrste mehaničarskih kvarova.</p>
-                        </div>
+            <!-- INTRO --> 
+                <!-- <div class="intro">
+                    <p>Auto servis Stop & Go je firma sa tradicijom dugom više od 20 godina. Osnovana davne 1990.godine kao SZAR Bora Auto, naša firma se bavila kako automehaničarskim uslugama tako i centriranjem i reglažom trapa. Stop & Go već dugi niz godina uspešno sarađuje sa brojnim zadovoljnim klijentima. Kako tehnologija napreduje i širi se spektar inovacija, potrudili smo se da naš tim ide u korak sa vremenom.</p>
+                </div> -->
+            <!-- INTRO END -->  
+                <div class="boxes">
                 </div>
-                <div id="vulkanizer" class="box">
-                    <h2>VULKANIZER</h2>
-                        <div class="box-1">
-                            <img src="assets/img/montaza-demontaza-12.jpg" alt="vulkanizer">
-
-                            <p>Vulkanizerska radnja opremljena je najsavremenijim mašinama za montažu, balansiranje i vulkaniziranje točkova. Auto servis Stop & Go pruža sve vulkanizerske usluge u najkraćem mogućem roku.
-                                Montaža guma predstavlja stavljanje gume na felnu, a demontaža obrnut proces tj. skidanje gume sa felne. Pri montaži, naše osoblje obraća posebnu pažnju da se ne ošteti guma. Ako nemate prave uslove ili mesta za pravilno odlaganje vaših pneumatika obratite nam se jer smo mi za vas napravili Stop & Go - hotel guma u kome će ostavljeni pneumatici na adekvatan način biti sačuvani za sledeću sezonu!</p>
-                        </div>
-                </div>
-                <div id="autodijagnostika" class="box">
-                    <h2>AUTODIJAGNOSTIKA</h2>
-                        <div class="box-1"> 
-                            <img src="assets/img/autodijagnostika-3.jpg" alt="autodijagnostika">
-
-                            <p>Autodijagnostika je kompjutersko uočavanje kvara na automobilu. Ovo je najprecizniji način određivanja stanja automobila zahvaljujući tome što gotovo svako vozilo danas poseduje određeni vid elektronskog sistema koji za očitavanje kvarova zahteva kompjuterske provere. Koja god vrsta kvara da se pojavi, elektronski sistem će informaciju o kvaru zapamtiti kao grešku koja će moći da bude identifikovana čim se uređaj za autodijagnostiku poveže sa vozilom.</p>
-                        </div>
-                </div>
-            </div>
-            <div id="kontakt" class="form">
-                <h2>KONTAKTIRAJTE NAS</h2>
-                <form action="/action_page.php">
-                    <div class="row">
-                        <label for="fname">Vaše ime</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Vaše ime...">
-                    </div>
-                    <div class="row">
-                        <label for="lname">Vaše prezime</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Vaše prezime...">
-                    </div>
-                    <div class="row">
-                        <label for="email">Vaš E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Vaš E-mail...">
-                    </div>
-                    <div class="row">
-                        <label for="subject">Vaša poruka</label>
-                        <textarea id="subject" name="subject" placeholder="Vaša poruka.." style="height:200px"></textarea>
-                    </div>
-                    <br>
-                    <div class="row">
-                    <input type="submit" value="Pošalji">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </main>
+            <!-- KONTAKT FORM -->
+         </div>
+    </div>
     <!-- FOOTER -->  
     <footer>
         <p>Copyright © 2022 Stop & Go Servis. All rights reserved.</p>
     </footer>
     <!-- FOOTER END -->  
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

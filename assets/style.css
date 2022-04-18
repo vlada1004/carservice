@@ -7,6 +7,7 @@
     --bcg-hero: rgba(96, 116, 137, 0.3);
     --bcg-newsp: #fafeff;
     --f-s-h2: 1.6em;
+    --f-s-h2m: 40px;
     --f-s-p: 0.7em;
   }
 * {
@@ -18,8 +19,33 @@
 }
 body {
     background-color: var(--dark);
-    width: 80%;
-    margin: 0 auto;
+    min-width: 1200px;
+    padding: 0 200px;
+}
+/* SLIDER */
+#slider {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#slider img{
+  width: 100%;
+  height: auto;
+}
+#left img, #right img {
+  position: absolute;
+  top: 40%;
+  background-color: transparent;
+  border: none;
+  color: var(--nav-menu);
+  cursor: pointer;
+}
+#left img {
+  left: 0;
+  width: 5%;
+}
+#right img {
+  right: 0; 
+  width: 5%;
 }
 /* MOBILE MENU */
 #mobile-menu {
@@ -30,29 +56,29 @@ body {
     display: none;
   }
   /* HEADER & FOOTER BACKGROUND */
-header, footer {
+#header, footer {
       background-color: var(--dark);
   }
 .wrapper {
       padding: 1%;
   }
   /* HEADER & FOOTER */
-header {
+#header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 10%;
+      padding: 20px 10%;
   }
-header img .logo {
+#header img .logo {
       width: 7%;
   }
-header menu a, footer .footer-menu a {
+#header menu a, footer .footer-menu a {
       border-right: 1px solid var(--nav-menu);
   }
-header menu a:last-child, footer .footer-menu a:last-child {
+#header menu a:last-child, footer .footer-menu a:last-child {
       border-right: none;
   }
-header menu a, footer .footer-menu a {
+#header menu a, footer .footer-menu a {
       text-transform: uppercase;
       font-size: 1rem;
       letter-spacing: 2px;
@@ -70,22 +96,21 @@ footer p {
     padding: 2em 0;
 }
 /* MAIN */
-main {
-    display: flex;
-    justify-content: space-between;
-}
-main p, .main-content {
-    color: var(--white);
-}
-main div .boxes {
+#main {
     display: block;
 }
-main .wrapper .intro {
+#main p {
+    color: var(--white);
+}
+#main div .boxes, #kontakt {
+    display: block;
+}
+#main .wrapper .intro {
     font-size: 1.5em;
     line-height: 1.6em;
     font-style: italic;
 }
-main .box {
+#main .box {
     background-color: var(--grey);
     color: var(--white);
     border: 10px solid var(--white);
@@ -116,7 +141,7 @@ main .box {
     clear: both;
   }
   /* CONTACT FORM */
-  main .form {
+  #main #kontakt {
     background-color: var(--grey);
     color: var(--white);
     box-shadow: 0 0 5px black;
@@ -146,6 +171,7 @@ main .box {
     font-weight: 700;
     background-color: var(--white);
     color: var(--dark);
+    margin-top: 20px;
     padding: 10px 30px;
     border: none;
     border-radius: 5px;
@@ -171,10 +197,144 @@ main .box {
     clear: both;
   }
   
-  /* Responsive layout - when the screen is less than 600px */
-  @media screen and (max-width: 600px) {
+  /* Responsive layout - when the screen is less than 1440px */
+  @media screen and (max-width: 1440px) {    
+    body {
+      padding: 0 100px;
+    }
+    #left img, #right img {
+      top: 40%;
+    }
+    
+  }
+  
+  /* Responsive layout - when the screen is less than 1024px */
+  @media screen and (max-width: 1024px) {
+    body {
+      padding: 0 100px;
+    }
+    #left img, #right img {
+      top: 33%;
+    }
+    #left img {
+      left: 30px;
+    }
+    #right img {
+      right: -145px;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 768px */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 0 50px;
+    }    
+    #slider img{
+      width: 100%;
+      height: auto;
+    }
+    #left img, #right img {
+      top: 50%;
+    }
+    #left img {
+      width: 5%;
+      left: 5px;
+    }
+    #right img {
+      width: 5%;
+      right: -425px;
+    }    
+    #header {
+      display: block;
+    }
+    #header .logo {
+      width: 200px;
+      float: left;
+    }
+    /* MOBILE MENU */
+    menu {
+      display: none;
+      margin-bottom: 5%;
+      width: 100%;
+      text-align: end;
+    }
+    #mobile-menu {
+        display: block;
+        color: var(--white);
+        font-size: 3em;
+        cursor: pointer;
+        text-align: end;
+    }
+    #header menu a {
+        border-right: none;
+        font-size: 3.5em;
+        text-align: center;
+    }
+    nav menu a {
+        display: block;
+        border-bottom: 1px solid var(--grey);
+        line-height: 2.5em;
+    }
+    #check:checked + menu {
+        display: block;
+        height: 100vh;
+    }
+    footer .footer-menu a {
+          font-size: 1.3rem;
+      }
+    .box h2, #kontakt h2 {
+      font-size: var(--f-s-h2m);
+      padding-top: 20px;
+    }
+    .boxes{
+      padding-top: 30px;
+    }
+    .box-1 p {
+      line-height: 1.4em;
+    }
+    .box-1 img {
+      margin-bottom: 30px;
+    }
     input[type=submit] {
       width: 100%;
       margin-top: 0;
+    }
+    .box-1 img {
+      display: block;
+      width: 100%;
+    }
+    #main p {
+      color: var(--white);
+      font-size: 35px;
+      padding-bottom: 30px;
+    }    
+    label, input[type=submit], input[type=text], select, textarea,input[type=email], footer p {
+      font-size: 30px;
+    }
+    input[type=submit] {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 425px */
+  @media screen and (max-width: 425px) {
+   #slider img{
+      width: 100%;
+      height: auto;
+    }
+    #left img {
+      width: 20%;
+      left: 0;
+    }
+    #right img {
+      width: 20%;
+      right: -780px;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 375px */
+  @media screen and (max-width: 375px) {
+    #right img {
+      right: -820px;
     }
   }
