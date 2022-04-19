@@ -19,11 +19,14 @@
 }
 body {
     background-color: var(--dark);
-    min-width: 1200px;
-    padding: 0 200px;
+}
+#outer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto; padding: 0 30px;
 }
 /* SLIDER */
 #slider {
+  position: relative;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -40,17 +43,16 @@ body {
   cursor: pointer;
 }
 #left img {
-  left: 0;
+  left: -60px;
   width: 5%;
 }
 #right img {
-  right: 0; 
+  right: -60px; 
   width: 5%;
 }
 /* MOBILE MENU */
 #mobile-menu {
       display: none;
-      line-height: 3em;
   }
 #check {
     display: none;
@@ -67,7 +69,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 10%;
+      padding: 20px 0;
   }
 #header img .logo {
       width: 7%;
@@ -197,59 +199,32 @@ footer p {
     clear: both;
   }
   
-  /* Responsive layout - when the screen is less than 1440px */
-  @media screen and (max-width: 1440px) {    
-    body {
-      padding: 0 100px;
-    }
-    #left img, #right img {
-      top: 40%;
-    }
+  /* Responsive layout - when the screen is less than 1280px */
+  @media screen and (max-width: 1280px) {
     
-  }
-  
-  /* Responsive layout - when the screen is less than 1024px */
-  @media screen and (max-width: 1024px) {
-    body {
-      padding: 0 100px;
-    }
-    #left img, #right img {
-      top: 33%;
+    #left img, 
+    #right img {
+      top: 50%;
+      width: 25px; height: auto;
+      margin-top: -15px;
     }
     #left img {
-      left: 30px;
+      left: -30px;
     }
     #right img {
-      right: -145px;
+      right: -30px;
     }
   }
   
   /* Responsive layout - when the screen is less than 768px */
-  @media screen and (max-width: 768px) {
-    body {
-      padding: 0 50px;
-    }    
-    #slider img{
-      width: 100%;
-      height: auto;
-    }
-    #left img, #right img {
-      top: 50%;
-    }
-    #left img {
-      width: 5%;
-      left: 5px;
-    }
-    #right img {
-      width: 5%;
-      right: -425px;
-    }    
+  @media screen and (max-width: 768px) {    
     #header {
       display: block;
     }
     #header .logo {
-      width: 200px;
+      width: 100px;
       float: left;
+      margin-top: 10px;
     }
     /* MOBILE MENU */
     menu {
@@ -315,26 +290,25 @@ footer p {
       margin-top: 20px;
     }
   }
-  
-  /* Responsive layout - when the screen is less than 425px */
-  @media screen and (max-width: 425px) {
-   #slider img{
-      width: 100%;
-      height: auto;
+  /* Responsive layout - when the screen is less than 768px */
+  @media screen and (max-width: 768px) {
+    #header menu a {
+      font-size: 30px;
     }
-    #left img {
-      width: 20%;
-      left: 0;
+    #main .box {
+      padding: 20px 10px;
+      margin: 0;
+      border: 0;
     }
-    #right img {
-      width: 20%;
-      right: -780px;
+    #main p {
+      font-size: 18px;
     }
-  }
-  
-  /* Responsive layout - when the screen is less than 375px */
-  @media screen and (max-width: 375px) {
-    #right img {
-      right: -820px;
+    .box h2, #kontakt h2 {
+      padding: 20px 0 0 0; 
+      margin-bottom: 30px;
+      font-size: 22px;
+    }
+    label, input[type=submit], input[type=text], select, textarea, input[type=email], footer p {
+      font-size: 16px;
     }
   }
